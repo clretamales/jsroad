@@ -1,9 +1,11 @@
 {
-    "extends": "stylelint-config-standard",
-    "rules": {
-      "indentation": 2,
-      "color-no-invalid-hex": true,
-      "block-no-empty": true,
-      "unit-whitelist": ["em", "rem", "%", "s", "px"]
-    }
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "indentation": 2,
+    "color-function-notation": "modern",
+    "alpha-value-notation": "percentage",
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "selector-type-no-unknown": true
   }
+}
