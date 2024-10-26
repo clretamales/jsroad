@@ -33,9 +33,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install Stylelint
-        run: npm install -g stylelint
-
+      - name: Install Stylelint and config
+        run: |
+          npm install -g stylelint
+          npm install -g stylelint-config-standard
+   
       - name: Run Stylelint
         run: stylelint "**/*.css"
 
