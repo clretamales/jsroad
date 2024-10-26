@@ -1,11 +1,7 @@
 {
   "extends": "stylelint-config-standard",
   "rules": {
-    "indentation": 2,
     "color-function-notation": "modern",
-    "alpha-value-notation": "percentage",
-    "block-no-empty": true,
-    "color-no-invalid-hex": true,
-    "selector-type-no-unknown": true
+    "alpha-value-notation": "percentage"
   }
 }

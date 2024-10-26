@@ -35,8 +35,8 @@ jobs:
 
       - name: Install Stylelint and config
         run: |
-          npm install -g stylelint
-          npm install -g stylelint-config-standard
+          npm install -g stylelint@latest
+          npm install -g stylelint-config-standard@latest
    
       - name: Run Stylelint
         run: stylelint "**/*.css" --fix
