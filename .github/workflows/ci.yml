@@ -39,7 +39,7 @@ jobs:
           npm install -g stylelint-config-standard
    
       - name: Run Stylelint
-        run: stylelint "**/*.css"
+        run: stylelint "**/*.css" --fix
 
   validate_js:
     name: Validate JavaScript
