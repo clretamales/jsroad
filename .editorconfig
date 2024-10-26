@@ -1,0 +1,51 @@
+# EditorConfig es compatible con muchos editores y ayuda a mantener la coherencia en el estilo de código
+# Más información: https://editorconfig.org/
+
+# Establece reglas por defecto para todos los archivos
+[*]
+# Indentación con 4 espacios (ajústalo según tu estándar)
+indent_style = space
+indent_size = 4
+
+# Final de línea
+end_of_line = lf
+
+# Codificación de caracteres
+charset = utf-8
+
+# Inserta una nueva línea al final de cada archivo
+insert_final_newline = true
+
+# Elimina espacios en blanco innecesarios al final de cada línea
+trim_trailing_whitespace = true
+
+# Configuración específica para archivos de Python
+[*.py]
+indent_size = 4
+max_line_length = 80
+
+# Configuración para archivos JavaScript
+[*.js]
+indent_size = 2
+max_line_length = 100
+
+# Configuración para archivos JSON (usa 2 espacios para JSON por convención)
+[*.json]
+indent_size = 2
+
+# Configuración para archivos YAML (usa 2 espacios para YAML por convención)
+[*.yml]
+indent_size = 2
+
+# Configuración para archivos Markdown
+[*.md]
+trim_trailing_whitespace = false  # Dejar los espacios al final para formateo en Markdown
+max_line_length = off  # No hay límite de longitud de línea para Markdown
+
+# Configuración para archivos HTML y CSS
+[*.{html,css}]
+indent_size = 2
+
+# Configuración para archivos de configuración YAML de GitHub Actions
+[.github/workflows/*.yml]
+indent_size = 2
