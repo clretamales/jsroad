@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# ESLint cache
+.eslintcache
+
+# Configuración específica del sistema
+.DS_Store
+Thumbs.db
