@@ -1,5 +1,5 @@
 // eslint.config.js
-export default [
+module.exports = [
   {
     ignores: ["node_modules/**"],
     languageOptions: {
