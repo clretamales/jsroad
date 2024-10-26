@@ -20,10 +20,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Validate HTML
-        uses: chrisderv/markdown-link-check-action@v2
-        with:
-          paths: '**/*.html'
+      - name: Install HTMLHint
+        run: npm install -g htmlhint
+
+      - name: Run HTMLHint
+        run: htmlhint "**/*.html"
 
   validate_css:
     name: Validate CSS
