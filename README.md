@@ -31,3 +31,24 @@ Para cualquier pregunta o sugerencia sobre este proyecto, puedes contactar al de
 ---
 
 Gracias por contribuir a **jsroad**. Esperamos que estas guías y configuraciones hagan tu experiencia de desarrollo más fácil y productiva.
+
+# Diagrama de Arquitectura de Flujos (PR y Deploy)
+
+```mermaid
+graph TD
+  subgraph PR_Workflow["Flujo de Pull Request"]
+    A[Inicio de Pull Request] --> B[Lint de Código]
+    B -->|JavaScript| C[ESLint]
+    B -->|CSS| D[Stylelint]
+    B -->|HTML| E[HTMLHint]
+    C --> F{¿Errores Encontrados?}
+    D --> F
+    E --> F
+    F -->|Sí| G[Notificación de Errores en PR]
+    F -->|No| H[Aprobación de PR y Merge a Main]
+  end
+
+  subgraph Deploy_Workflow["Flujo de Despliegue"]
+    H --> I[Despliegue Automático en GitHub Pages]
+    I --> J[Confirmación de Despliegue]
+  end
