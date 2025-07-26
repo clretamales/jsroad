@@ -52,3 +52,4 @@ graph TD
     H --> I[Despliegue Automático en GitHub Pages]
     I --> J[Confirmación de Despliegue]
   end
+```
